@@ -1,0 +1,121 @@
+.prjectInfo {
+  width: 100%;
+  height: auto;
+}
+
+.prjectInfoCon {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.prjectInfoCon .prjectInfoCon_Titls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prjectInfoCon .prjectInfoCon_Titls .prjectInfoCon_Titls_name {
+  font-weight: 700;
+  font-size: 50px;
+  color: #000000;
+  line-height: 78px;
+}
+
+.prjectInfoCon .prjectInfoCon_Titls .prjectInfoCon_Titls_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #000000;
+  text-align: center;
+}
+
+.prjectInfoCon .prjectInfoCon_Infos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.prjectInfoCon .prjectInfoCon_Infos .prjectInfoCon_Info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ADADAD;
+  padding-bottom: 50px;
+}
+
+.prjectInfoCon .prjectInfoCon_Infos .row {
+    flex-direction: row;
+}
+
+.prjectInfoCon .prjectInfoCon_Infos .rowRevers {
+    flex-direction: row-reverse;
+} 
+
+.prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_texts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: start;
+}
+
+.prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_texts
+  span {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #111111;
+}
+
+.prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_texts
+  ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_texts
+  ul
+  li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_texts
+  button {
+  width: 276px;
+  height: 56px;
+  color: #473232;
+  background-color: #febc67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+}
