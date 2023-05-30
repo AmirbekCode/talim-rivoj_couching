@@ -3,10 +3,16 @@ import './App.css'
 import Faq from './components/FAQ/Faq'
 
 function App() {
+  const faqData = [
+    {
+      question: 'Biznes model',
+      answer: 'Biznes modelning tuzilishi'
+    }
+  ]
 
   return (
     <div className="App">
-      <Faq/>
+      <Faq faqData={faqData}/>
     </div>
   )
 }
