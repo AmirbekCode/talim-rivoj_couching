@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import Faq from './components/FAQ/Faq'
+import Accordion from './components/FAQ/Accordions'
 import Projectinfo from './components/ProjectInfo/ProjectInfo'
-
+import Navbar from "./components/Navbar/Navbar"
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
-
   return (
-    <div className="App">
-      <Faq/>
-      <Projectinfo/>
-    </div>
+    <ChakraProvider>
+      <Navbar />
+      <Accordion />
+      <Projectinfo />
+    </ChakraProvider>
+
   )
 }
-
 export default App

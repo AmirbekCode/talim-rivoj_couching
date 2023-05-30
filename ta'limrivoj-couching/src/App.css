@@ -3,5 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
+    list-style-type: none;
+    text-decoration: none;
 }
