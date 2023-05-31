@@ -15,7 +15,8 @@ function App() {
 
   return (
     <div className="App">
-      <Faq faqData={faqData}/>
+      {/* <Faq faqData={faqData}/> */}
+      <Projectinfo />
     </div>
 // =======
 //   return (
@@ -26,5 +27,6 @@ function App() {
 
 // >>>>>>> 165194531dcb0720061d12672fc052293f673187
 //   )
+  )
 }
 export default App
