@@ -48,7 +48,7 @@ const Faq = () => {
     return faqData.map((item, index) => (
       <div className="content">
         <div className="header-title">
-          <h1>"Biznes Kouching: Tizimlashtirish va xodimlarni boshqarish" dasturi</h1>
+          <h1 className='header-title-title'>"Biznes Kouching: Tizimlashtirish va xodimlarni boshqarish" dasturi</h1>
         </div>
         <div key={index} className='faq-item'>
           <Accordion className='main-content' expanded={activeIndex === index} onChange={() => handleClick(index)}>
