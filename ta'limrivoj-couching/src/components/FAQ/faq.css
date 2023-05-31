@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.content{
+    height: 100vh;
+}
+
 .header-title {
     max-height: 210px;
     display: flex;
