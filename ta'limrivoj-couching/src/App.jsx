@@ -11,9 +11,8 @@ function App() {
 
   return (
     <div className="App">
-
-      <Faq faqData={faqData}/>
-
+      <Navbar/>
+      <Main/>
       <Projectinfo />
       <Faq/>
       
