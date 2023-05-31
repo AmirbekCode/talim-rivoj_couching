@@ -15,9 +15,6 @@ import Faq from './components/FAQ/Faq'
         <Projectinfo />
         <Faq />
       </div>
-
-
-
     )
   }
   export default App
