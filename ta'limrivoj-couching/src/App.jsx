@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Projectinfo />
       <Faq/>
+      <h1>FUCK YOu</h1>
     </div>
 
   )
