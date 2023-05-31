@@ -2,29 +2,17 @@ import { useState } from 'react'
 import './App.css'
 import Projectinfo from './components/ProjectInfo/ProjectInfo'
 import Navbar from "./components/Navbar/Navbar"
+import Main from './components/Main/Main'
 import { ChakraProvider } from '@chakra-ui/react'
+import './App.css'
 
-function App() {
-// <<<<<<< HEAD
-  const faqData = [
-    {
-      question: 'Biznes model',
-      answer: 'Biznes modelning tuzilishi'
-    }
-  ]
-
+function App() {  
   return (
-    <div className="App">
-      <Faq faqData={faqData}/>
-    </div>
-// =======
-//   return (
-//     <ChakraProvider>
-//       <Navbar />
-//       <Projectinfo />
-//     </ChakraProvider>
-
-// >>>>>>> 165194531dcb0720061d12672fc052293f673187
-//   )
+    <ChakraProvider>
+      <Navbar />
+      <Main />
+      <Projectinfo />
+    </ChakraProvider>
+  )
 }
 export default App
