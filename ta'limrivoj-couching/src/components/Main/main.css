@@ -1,6 +1,13 @@
 .Main {
     height: 100vh;
-    margin: 50px 174px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../../assets/images/Untitled-2.jpg');
+}
+
+.container {
+    margin: 120px 174px;
 }
 
 .location {
@@ -13,25 +20,22 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 25px;
-    /* or 156% */
-
     display: flex;
     align-items: center;
-    color: #000000;
+    color: #ffffff;
 }
 
 .main-subtitle {
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 28px;
-/* or 156% */
-
-display: flex;
-align-items: center;
-letter-spacing: 2px;
-text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .main-title {
@@ -43,6 +47,7 @@ text-transform: uppercase;
     display: flex;
     align-items: center;
     flex: none;
+    color: #ffffff;
 }
 
 .subdesc {
@@ -53,6 +58,7 @@ text-transform: uppercase;
     line-height: 26px;
     display: flex;
     align-items: center;
+    color: #ffffff;
 }
 
 .button-main {
@@ -60,4 +66,17 @@ text-transform: uppercase;
     background: #FEBC67;
     border-radius: 30px;
     margin-top: 29px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
+
+.owner_picture {
+    position: absolute;
+}
+

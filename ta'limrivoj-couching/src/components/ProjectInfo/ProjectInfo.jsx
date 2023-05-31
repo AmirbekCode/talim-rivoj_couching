@@ -27,6 +27,32 @@ export default function ProjectInfo() {
         {
             id: 2,
             class: "rowRevers" ,
+            name: "",
+            lists: [
+                {
+                    name: "Dars videosi to‘liq",
+                },
+                {
+                    name: "Topshiriqlar",
+                },
+                {
+                    name: "Elektron shablonlar",
+                },
+                {
+                    name: "Texnikalar uchun misollar",
+                },
+                {
+                    name: "Biznes vazifalarni topshirish"
+                },
+                {
+                    name: "Biznes vazifalarni tekshirish"
+                }
+            ],
+            image: "https://static.tildacdn.com/tild6535-6332-4238-a330-396233393734/ezgif-5-8d228b218eqe.gif"
+        },
+        {
+            id: 3,
+            class: "row" ,
             name: "Telegram gruppa",
             lists: [
                 {
@@ -45,8 +71,36 @@ export default function ProjectInfo() {
                     name: "Voise chat har hafta 1 marta"
                 }
             ],
-            image: "https://static.tildacdn.com/tild6535-6332-4238-a330-396233393734/ezgif-5-8d228b218eqe.gif"
-        }
+            image: "https://thumb.tildacdn.com/tild6163-6338-4565-a665-633964643934/-/resize/623x/-/format/webp/features_4.png"
+        },
+        {
+            id: 4,
+            class: "rowRevers" ,
+            name: "VOICE CHAT Ibraxim Gulyamov",
+            lists: [
+                {
+                    name: "Savol-javob",
+                },
+                {
+                    name: "Netvorking",
+                }
+            ],
+            image: "https://thumb.tildacdn.com/tild3636-6239-4730-b738-633066376263/-/resize/623x/-/format/webp/features_6.png"
+        },
+        {
+            id: 5,
+            class: "row" ,
+            name: "VOICE CHAT Instruktor bilan",
+            lists: [
+                {
+                    name: "Savol-javob",
+                },
+                {
+                    name: "Netvorking",
+                }
+            ],
+            image: "https://thumb.tildacdn.com/tild6265-3866-4834-b765-326135363739/-/resize/623x/-/format/webp/features_7.png"
+        },
     ])
 
     return (
