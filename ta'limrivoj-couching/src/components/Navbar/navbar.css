@@ -47,10 +47,6 @@
     background: rgb(58, 58, 199);
   }
   
-  .button2:hover {
-    background: rgb(193, 228, 248);
-    color: rgb(33, 0, 85);
-  }
   
 
   @media screen  and (max-width: 576px ){
