@@ -3,6 +3,7 @@
 .faq-container {
     max-width: 100%;
     margin: 0 auto;
+
     padding: 55px;
     background: #10114A;
   }
@@ -15,7 +16,13 @@
     gap: 30px;
   }
   
-  .header-title {
+
+.content{
+    height: 100vh;
+}
+
+.header-title {
+    max-height: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
