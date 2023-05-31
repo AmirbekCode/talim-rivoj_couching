@@ -1,43 +1,111 @@
+/* faq.css */
+
 .faq-container {
     max-width: 100%;
     margin: 0 auto;
-}
-
-.header-title {
-    max-height: 210px;
+    padding: 55px;
+    background: #10114A;
+  }
+  
+  .content {
+    text-align: center;
+    min-height: 686px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .header-title {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.header-title .header-title-title {
+  }
+  
+  .header-title .header-title-title {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 60px;
-}
-
-.faq-item {
+    color: #fff;
+  }
+  
+  .main-content {
+    min-height: 50px;
+    min-width: 900px;
+  }
+  
+  .faq-item {
     width: 100%;
+    max-height: 686px;
     display: flex;
+    gap: 30px;
     justify-content: center;
-    background: #bd2222;
-
-}
-
-.faq-question {
-    background-color: #bd2222;
+  }
+  
+  .faq-question {
+    color: #fff;
     padding: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.faq-question.active {
-    background-color: #e8e8e8;
-}
-
-.faq-answer {
+  }
+  
+  .faq-answer {
+    display: flex;
     background-color: #d22424;
-    padding: 10px;
-}
+    padding: 15px;
+    border-bottom: 0.5px solid #ffffff3b;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-container {
+      padding: 30px;
+    }
+  
+    .faq-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-content {
+      min-width: auto;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .faq-container {
+      padding: 30px 160px;
+    }
+  
+    .faq-item {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .main-content {
+      min-width: 600px;
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .faq-container {
+      padding: 60px;
+    }
+  
+    .header-title .header-title-title {
+      font-size: 48px;
+      line-height: 64px;
+    }
+  }
+  
+  @media (min-width: 1441px) {
+    .faq-container {
+      padding: 80px;
+    }
+  
+    .header-title .header-title-title {
+      font-size: 54px;
+      line-height: 72px;
+    }
+  }
+  

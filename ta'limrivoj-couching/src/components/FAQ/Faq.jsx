@@ -10,7 +10,7 @@ import '../FAQ/faq.css';
 const Faq = () => {
   const faqData = [
     {
-      question: 'Biznbes model',
+      question: 'Biznes model',
       answers: [
         {
           id: 1,
@@ -34,9 +34,90 @@ const Faq = () => {
         },
       ],
     },
+
+    {
+      question: 'Tashkiliy Tuzilma',
+      answers: [
+        {
+          id: 1,
+          content: 'Tashkiliy tuzilmani tuzish',
+        },
+        {
+          id: 2,
+          content: 'Tashkiliy tuzilmani korxonaga joriy qilish usullari',
+        },
+        {
+          id: 3,
+          content: 'Funksiya',
+        },
+        {
+          id: 4,
+          content: 'YAQM',
+        },
+        {
+          id: 5,
+          content: 'Tezkor oqim',
+        },
+      ],
+    },
+
+    {
+      question: 'Biznes jarayon',
+      answers: [
+        {
+          id: 1,
+          content: 'Biznesda qanday jarayonlar bor',
+        },
+        {
+          id: 2,
+          content: 'Biznes jarayonlarni tuzish',
+        },
+        {
+          id: 3,
+          content: 'Biznes jarayonlarni xodimlarga o‘rgatish va shu bo‘yicha ishlarni tashkillashtirish',
+        },
+        {
+          id: 4,
+          content: 'Bosh biznes jarayonlar',
+        },
+        {
+          id: 5,
+          content: 'Asosiy biznes jarayonlar',
+        },
+      ],
+    },
+
+    {
+      question: 'Tashkiliy Tuzilma',
+      answers: [
+        {
+          id: 1,
+          content: 'Tashkiliy tuzilmani tuzish',
+        },
+        {
+          id: 2,
+          content: 'Tashkiliy tuzilmani korxonaga joriy qilish usullari',
+        },
+        {
+          id: 3,
+          content: 'Funksiya',
+        },
+        {
+          id: 4,
+          content: 'YAQM',
+        },
+        {
+          id: 5,
+          content: 'Tezkor oqim',
+        },
+      ],
+    },
     
+
     // Add more FAQ items as needed
   ];
+
+
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -46,29 +127,29 @@ const Faq = () => {
 
   const renderQuestions = () => {
     return faqData.map((item, index) => (
-      <div className="content">
-        <div className="header-title">
-          <h1 className='header-title-title'>"Biznes Kouching: Tizimlashtirish va xodimlarni boshqarish" dasturi</h1>
-        </div>
+      
         <div key={index} className='faq-item'>
-          <Accordion className='main-content' expanded={activeIndex === index} onChange={() => handleClick(index)}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls={`panel-${index}-content`}
-              id={`panel-${index}-header`}
-            >
-              <Typography className={`faq-question ${activeIndex === index ? 'active' : ''}`}>
-                {item.question}
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              {item.answers.map((answer) => (
-                <Typography className='faq-answer' key={answer.id}>{answer.content}</Typography>
-              ))}
-            </AccordionDetails>
-          </Accordion>
+          <div className="accordion">
+            <Accordion sx={{background: '#0C0C70', margin: '10px'}} className='main-content' expanded={activeIndex === index} onChange={() => handleClick(index)}>
+              <AccordionSummary 
+                className='faq-bg'
+                expandIcon={<ExpandMoreIcon sx={{color: '#fff'}}/>}
+                aria-controls={`panel-${index}-content`}
+                id={`panel-${index}-header`}
+              >
+                <Typography className={`faq-question ${activeIndex === index ? 'active' : ''}`}>
+                  {item.question}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails sx={{background: '#0C0C70'}} >
+                {item.answers.map((answer) => (
+                  <Typography sx={{background: '#0C0C70', color: '#fff'}} className='faq-answer' key={answer.id}>{answer.content}</Typography>
+                ))}
+              </AccordionDetails>
+            </Accordion>
+          </div>
         </div>
-      </div>
+     
     ));
   };
 
