@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Projectinfo from './components/ProjectInfo/ProjectInfo'
 import Navbar from "./components/Navbar/Navbar"
-import { ChakraProvider } from '@chakra-ui/react'
+// import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
 // <<<<<<< HEAD
@@ -15,8 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Faq faqData={faqData}/> */}
-      <Projectinfo />
+      <Faq faqData={faqData}/>
     </div>
 // =======
 //   return (
