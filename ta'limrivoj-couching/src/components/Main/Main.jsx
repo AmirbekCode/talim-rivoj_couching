@@ -32,9 +32,6 @@ export default function Main() {
             1 oylik mualliflik dasturi
           </button>
         </div>
-        <div className="photo-owner">
-
-        </div>
       </div>
     </div>
   )

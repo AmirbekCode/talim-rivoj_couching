@@ -79,10 +79,16 @@
     display: flex;
     align-items: center;
     text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.owner_picture {
-    position: absolute;
+.button-main:hover {
+    scale: 1.03;
+}
+
+.button-main:active {
+    scale: 0.98;
 }
 
 @media screen and (max-width: 576px) {
@@ -91,7 +97,7 @@
         display: flex;
         justify-content: center;
         background-image: url('../../assets/images/bgimg.jpg');
-        
+
     }
 
 
@@ -101,7 +107,7 @@
 
     .main-infos {
         margin: 40px 0px;
-    
+
     }
 
     .location {
