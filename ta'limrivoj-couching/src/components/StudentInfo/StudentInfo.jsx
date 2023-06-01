@@ -11,7 +11,8 @@ import "swiper/css/pagination";
 import "./studentInfo.css";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
+
 
 export default function StudentInfo() {
     return (
@@ -24,7 +25,20 @@ export default function StudentInfo() {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[FreeMode, Pagination]}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1
+                    },
+                    575: {
+                        slidesPerView: 3
+                    }
+                }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
                 <SwiperSlide><img src={std} alt="" /></SwiperSlide>
