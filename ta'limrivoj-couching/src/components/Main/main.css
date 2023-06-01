@@ -7,7 +7,12 @@
 }
 
 .container {
-    margin: 120px 174px;
+    margin: 0px 174px;
+}
+
+.main-infos {
+    margin: 120px 0px;
+
 }
 
 .location {
@@ -91,7 +96,12 @@
 
 
     .container {
-        margin: 40px 34px;
+        margin: 0px 34px;
+    }
+
+    .main-infos {
+        margin: 40px 0px;
+    
     }
 
     .location {

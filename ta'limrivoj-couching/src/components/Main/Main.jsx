@@ -2,7 +2,6 @@ import React from 'react'
 import './main.css'
 import Owner from '../../assets/images/data.png'
 
-
 export default function Main() {
   return (
     <div className='Main'>

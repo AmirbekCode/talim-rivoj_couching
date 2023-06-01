@@ -5,14 +5,19 @@ import Navbar from "./components/Navbar/Navbar"
 import Main from './components/Main/Main'
 import './App.css'
 import Faq from './components/FAQ/Faq'
+import StudentInfo from './components/StudentInfo/StudentInfo'
+import MainInfo from './components/MainInfo/MainInfo'
+
 
   function App() {
     return (
       <div className="App">
         <Navbar />
         <Main />
+        <MainInfo/>
         <Projectinfo />
         <Faq />
+        <StudentInfo/>
       </div>
     )
   }
