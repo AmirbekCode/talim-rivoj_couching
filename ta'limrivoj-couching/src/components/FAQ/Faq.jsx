@@ -112,7 +112,7 @@ const Faq = () => {
         },
       ],
     },
-    
+
 
     // Add more FAQ items as needed
   ];
@@ -126,31 +126,37 @@ const Faq = () => {
   };
 
   const renderQuestions = () => {
-    return faqData.map((item, index) => (
-      
-        <div key={index} className='faq-item'>
-          <div className="accordion">
-            <Accordion sx={{background: '#0C0C70', margin: '10px'}} className='main-content' expanded={activeIndex === index} onChange={() => handleClick(index)}>
-              <AccordionSummary 
-                className='faq-bg'
-                expandIcon={<ExpandMoreIcon sx={{color: '#fff'}}/>}
-                aria-controls={`panel-${index}-content`}
-                id={`panel-${index}-header`}
-              >
-                <Typography className={`faq-question ${activeIndex === index ? 'active' : ''}`}>
-                  {item.question}
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails sx={{background: '#0C0C70'}} >
-                {item.answers.map((answer) => (
-                  <Typography sx={{background: '#0C0C70', color: '#fff'}} className='faq-answer' key={answer.id}>{answer.content}</Typography>
-                ))}
-              </AccordionDetails>
-            </Accordion>
-          </div>
+    return (
+      <div className='content'>
+        <div className="header-title">
+          <h1 className='header-tit'>Biznes Kouching: Tizimlashtirish va xodimlarni boshqarish" dasturi</h1>
         </div>
-     
-    ));
+        {faqData.map((item, index) => (
+          <div key={index} className='faq-item'>
+            <div className="accordion">
+              <Accordion sx={{ background: '#0C0C70', margin: '10px' }} className='main-content' expanded={activeIndex === index} onChange={() => handleClick(index)}>
+                <AccordionSummary
+                  className='faq-bg'
+                  expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
+                  aria-controls={`panel-${index}-content`}
+                  id={`panel-${index}-header`}
+                >
+                  <Typography className={`faq-question ${activeIndex === index ? 'active' : ''}`}>
+                    {item.question}
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails sx={{ background: '#0C0C70' }} >
+                  {item.answers.map((answer) => (
+                    <Typography sx={{ background: '#0C0C70', color: '#fff' }} className='faq-answer' key={answer.id}>{answer.content}</Typography>
+                  ))}
+                </AccordionDetails>
+              </Accordion>
+            </div>
+          </div>
+
+        ))}
+      </div>
+    )
   };
 
   return <div className="faq-container">{renderQuestions()}</div>;
