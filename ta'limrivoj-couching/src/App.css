@@ -8,3 +8,17 @@
     text-decoration: none;
 }
 
+body {
+    /* плашка-бегунок и фон */
+    scrollbar-color: #999 #333;
+  }
+  body::-webkit-scrollbar {
+    width: 10px; /* в основном для вертикальных полос прокрутки */
+    height: 10px; /* в основном для горизонтальных полос прокрутки */
+  }
+  body::-webkit-scrollbar-thumb { /* плашка-бегунок */
+    background: rgba(0, 0, 0, 0.552);
+  }
+  body::-webkit-scrollbar-track { /* фон */
+    background: rgba(255, 255, 255, 0.181);
+  }

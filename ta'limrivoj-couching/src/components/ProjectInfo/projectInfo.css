@@ -1,4 +1,5 @@
 .prjectInfo {
+  margin-top: 70px;
   width: 100%;
   height: auto;
 }
@@ -118,4 +119,78 @@
   font-size: 18px;
   line-height: 28px;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 576px)  {
+  .prjectInfo {
+    width: 100%;
+    height: auto;
+  } 
+  
+  .prjectInfoCon {
+    width: 100%;
+  }
+  .prjectInfoCon .prjectInfoCon_Titls  {
+    gap: 10px;
+  }
+  .prjectInfoCon .prjectInfoCon_Titls .prjectInfoCon_Titls_name {
+    font-size: 30px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .prjectInfoCon .prjectInfoCon_Titls .prjectInfoCon_Titls_text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .prjectInfoCon .prjectInfoCon_Infos .prjectInfoCon_Info {
+    width: 100%;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .prjectInfoCon .prjectInfoCon_Infos .row {
+    flex-direction: column-reverse;
+  }
+  .prjectInfoCon .prjectInfoCon_Infos .rowRevers {
+    flex-direction: column-reverse;
+  }
+  .prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_texts {
+    width: 100%;
+    height: auto;
+  }
+  .prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_images
+  img {
+    width: 80%;
+  }
+  .prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_texts
+  span {
+    font-size: 18px;
+    text-align: center;
+  }
+  .prjectInfoCon
+  .prjectInfoCon_Infos
+  .prjectInfoCon_Info
+  .prjectInfoCon_Info_texts
+  ul
+  li {
+    font-size: 15px;
+  }
 }

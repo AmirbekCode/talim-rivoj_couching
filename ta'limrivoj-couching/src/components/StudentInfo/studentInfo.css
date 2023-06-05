@@ -37,8 +37,19 @@
   text-align: center;
 }
 .mySwiper {
-    width: 80%;
+  width: 80%;
 }
 .mySwiper img {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+
+  .StudentInfo .StudentInfoTitle {
+    width: 90%;
+    font-size: 30px;
+  }
+  .mySwiper {
     width: 100%;
+  }
 }
