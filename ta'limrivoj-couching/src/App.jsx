@@ -17,11 +17,13 @@ function App() {
     <div className="App">
       <Navbar />
       <Main />
+      <MainInfo />
       <Projectinfo />
       <Faq />
       <YouTube />
       <Ceo />
-      <StudentInfo/>
+      <StudentInfo />
+      
     </div>
   )
 }

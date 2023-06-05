@@ -1,10 +1,9 @@
-import React from 'react'
-import '../CeoInfo/ceo.css'
-import Teach from '../../assets/CeoFileImg/teach.png'
-import Info from './info/Info'
+import React from 'react';
+import '../CeoInfo/ceo.css';
+import Teach from '../../assets/CeoFileImg/teach.png';
+import Info from './info/Info';
 
 function Ceo({ title, description, buttonText }) {
-
   const CeoData = [
     {
       title: 'XODIMLARNI SAMARALI BOSHQARISH KURSI',
@@ -13,24 +12,23 @@ function Ceo({ title, description, buttonText }) {
     }
   ];
 
-  const data = CeoData[0]
+  const data = CeoData[0];
 
   return (
     <div className="main">
       <div className='card'>
-          <div className="imgBx">
-            <img src={Teach} />
-          </div>
+        <div className="imgBx">
+          <img src={Teach.default} alt="Teach" />
+        </div>
         <div className="card-content">
           <h2 className='card-title'>{data.title}</h2>
           <p className='card-descrition'>{data.description}</p>
           <button className="card-button">{data.buttonText}</button>
         </div>
       </div>
-      <Info/>
+      <Info />
     </div>
-
-  )
+  );
 }
 
-export default Ceo
+export default Ceo;

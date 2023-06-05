@@ -1,11 +1,7 @@
 import React from 'react';
 import Meeting from '../../../assets/CeoFileImg/meeting.png';
 import Ceo from '../../../assets/CeoFileImg/ceo.png';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import '../info/info.css'
+import '../info/info.css';
 
 function Info() {
   const infoData = [
@@ -22,17 +18,14 @@ function Info() {
   return (
     <div className="info-card">
       {infoData.map((item, index) => (
-        <Card key={index} sx={{ maxWidth: 345 }}>
-          <CardMedia sx={{
-            objectFit: 'cover',
-            objectPosition: 'center',
-          }} component="img" height="140" image={item.img} alt="Image" />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {item.text}
-            </Typography>
-          </CardContent>
-        </Card>
+        <div key={index} className="image-card">
+          <div className="bg-img" style={{ backgroundImage: `url(${item.img})`, borderRadius: '50px' }}></div>
+          <div className="info-content">
+            <div className="info-text">
+              <p>{item.text}</p>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   );

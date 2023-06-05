@@ -1,4 +1,85 @@
-.info-card{
-    display: flex;  
-    gap: 50px;
+.info-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-card {
+    position: relative;
+    width: 479px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.info-text {
+    padding: 16px;
+    color: #000;
+}
+
+.info-text p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 414px) {
+    .image-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 413px) {
+    .image-card {
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .image-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .image-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .image-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .image-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .image-card {
+        width: 100%;
+        height: auto;
+    }
 }
