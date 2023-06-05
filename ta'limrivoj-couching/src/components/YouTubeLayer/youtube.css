@@ -1,5 +1,6 @@
 .youtube-player {
     padding: 20px 100px;
+    height: 700px;
     max-width: 100%;
     overflow: hidden;
   }
