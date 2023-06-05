@@ -1,0 +1,65 @@
+.youtube-player {
+    height: 775px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-player iframe {
+
+    width: 960px;
+    height: 540px;
+}
+
+
+@media (min-width: 375px) and (max-width: 412px){
+    .youtube-player{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .youtube-player iframe{
+        width: 375px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 767px) {
+    .youtube-player {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .youtube-player iframe {
+        width: 700px;
+        height: 350px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .youtube-player {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        padding: 0 100px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .youtube-player iframe {
+        width: 923px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .youtube-player {
+        padding-bottom: 56.25%;
+    }
+}

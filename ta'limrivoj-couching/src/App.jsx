@@ -5,15 +5,21 @@ import Navbar from "./components/Navbar/Navbar"
 import Main from './components/Main/Main'
 import './App.css'
 import Faq from './components/FAQ/Faq'
+import YouTube from './components/YouTubeLayer/YouTube'
+import Ceo from './components/CeoInfo/Ceo'
 
-  function App() {
-    return (
-      <div className="App">
-        <Navbar />
-        <Main />
-        <Projectinfo />
-        <Faq />
-      </div>
-    )
-  }
-  export default App
+
+function App() {
+
+  return (
+    <div className="App">
+      <Navbar />
+      <Main />
+      <Projectinfo />
+      <Faq />
+      <YouTube />
+      <Ceo />
+    </div>
+  )
+}
+export default App
