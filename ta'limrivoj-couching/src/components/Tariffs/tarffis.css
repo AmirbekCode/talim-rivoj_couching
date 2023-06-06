@@ -27,3 +27,19 @@
 .tarffis .tarffisCons img {
     width: 30%;
 }
+
+@media screen and (max-width: 560px) {
+    .tarffis {
+        width: 100%;
+    }
+    .tarffis .tarffisCons {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 44px;
+    }
+    .tarffis .tarffisCons img {
+        width: 80%;
+    }
+}
