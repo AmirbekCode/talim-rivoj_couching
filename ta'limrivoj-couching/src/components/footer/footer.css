@@ -19,5 +19,35 @@
 
 .footer-phone {
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     line-height: 40px;
+}
+
+.footer-point {
+    padding: 20px;
+}
+
+.footer-point .sure-point{
+    font-size: 20px;
+}
+
+.footer-links{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (min-width: 386px) and (max-width: 926px){
+    .footer-main{
+        width: 100%;
+    }
+    .footer-phone{
+        font-size: 16px;
+        gap: 30px;
+        line-height: 20px;
+    }
 }

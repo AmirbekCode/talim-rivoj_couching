@@ -13,19 +13,21 @@ function Footer() {
                     <p>Qo'ng'iroq qilib  ko'proq ma'lumot olishingiz mumkin</p>
                 </div>
                 <div className="footer-address">
-                    <div className="footer-point">
-                        <span className="sure-point">Mo'ljal: Xorazm shahar, Darital yoni </span>
-                    </div>
-                    <div className="footer-links">
-                        <a href="https://www.youtube.com/@TalimRivoj/about" className="link-item">
-                        <FontAwesomeIcon icon={faYoutube} style={{color: '#000'}}/>
-                        </a>
-                        <a href="https://t.me/TalimRivoj" className="link-item">
-                        <FontAwesomeIcon icon={faTelegram} style={{color: '#000'}}/>
-                        </a>
-                        <a href="https://www.instagram.com/talimrivoj_company/" className="link-item">
-                        <FontAwesomeIcon icon={faInstagram} style={{color: '#000'}}/>
-                        </a>
+                    <div className="footer-wrap">
+                        <div className="footer-point">
+                            <span className="sure-point">Mo'ljal: Xorazm shahar, Darital yoni </span>
+                        </div>
+                        <div className="footer-links">
+                            <a href="https://www.youtube.com/@TalimRivoj/about" className="link-item">
+                                <FontAwesomeIcon icon={faYoutube} style={{ color: '#000' }} />
+                            </a>
+                            <a href="https://t.me/TalimRivoj" className="link-item">
+                                <FontAwesomeIcon icon={faTelegram} style={{ color: '#000' }} />
+                            </a>
+                            <a href="https://www.instagram.com/talimrivoj_company/" className="link-item">
+                                <FontAwesomeIcon icon={faInstagram} style={{ color: '#000' }} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
