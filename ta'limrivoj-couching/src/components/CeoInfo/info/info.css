@@ -1,53 +1,53 @@
 .info-card {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .image-card {
-    position: relative;
-    width: 479px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 50px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-card {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50px;
+}
+
+.bg-img {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  object-fit: cover;
+  padding: 0;
+
+}
+
+.info-text {
+  padding: 16px;
+  color: #000;
+}
+
+.info-text p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+@media only screen and (min-width: 386px) and (max-width: 500px) {
   .bg-img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50px;
-    object-fit: cover;
-  
+    width: 75%;
+    background-repeat: no-repeat;
   }
-  
+
   .info-text {
-    padding: 16px;
-    color: #000;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
   }
-  
-  .info-text p {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  
-
-  @media only screen and (min-width: 386px) and (max-width: 500px) {
-    .bg-img{
-        width: 75%;
-        background-repeat: no-repeat;
-    }
-
-    .info-text{
-        font-weight: 600;
-        text-align: center;
-        padding: 20px;
-    }
-  }
-  
+}

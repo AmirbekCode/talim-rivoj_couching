@@ -1,0 +1,23 @@
+
+
+.footer-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    min-height: 346px;
+}
+
+.footer {
+    display: flex;
+    
+    flex-direction: column;
+    text-align: center;
+    gap: 54px;
+}
+
+.footer-phone {
+    font-size: 25px;
+    line-height: 40px;
+}

@@ -8,7 +8,7 @@ import Faq from './components/FAQ/Faq'
 import Ceo from './components/CeoInfo/Ceo'
 import StudentInfo from './components/StudentInfo/StudentInfo'
 import MainInfo from './components/MainInfo/MainInfo'
-
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
       <Faq />
       <Ceo />
       <StudentInfo />
+      <Footer/>
     </div>
   )
 }
