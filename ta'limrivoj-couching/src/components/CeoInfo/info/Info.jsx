@@ -1,17 +1,16 @@
 import React from 'react';
-import Meeting from '../../../assets/CeoFileImg/meeting.png';
 import Ceo from '../../../assets/CeoFileImg/ceo.png';
 import '../info/info.css';
 
 function Info() {
   const infoData = [
     {
-      img: Meeting,
-      text: 'Ibraxim Gulyamov bilan tushlik 6 marta (kompaniya hisobidan)',
+      img: Ceo,
+      text: 'Saidabdulla Madaminov bilan tushlik 6 marta (kompaniya hisobidan)',
     },
     {
       img: Ceo,
-      text: 'Ibraxim Gulyamov bilan individual konsultatsiya (1 marta 30 minut, onlayn/oflayn)',
+      text: 'Saidabdulla Madaminov bilan individual konsultatsiya (1 marta 30 minut, onlayn/oflayn)',
     },
   ];
 

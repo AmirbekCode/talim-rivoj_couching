@@ -134,7 +134,7 @@ const Faq = () => {
         {faqData.map((item, index) => (
           <div key={index} className='faq-item'>
             <div className="accordion">
-              <Accordion sx={{ background: '#0C0C70', margin: '10px' }} className='main-content' expanded={activeIndex === index} onChange={() => handleClick(index)}>
+              <Accordion sx={{ background: '#0C0C70', margin: '10px', width: '70%' }} className='main-content' expanded={activeIndex === index} onChange={() => handleClick(index)}>
                 <AccordionSummary
                   className='faq-bg'
                   expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
