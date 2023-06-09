@@ -9,6 +9,7 @@ import Ceo from './components/CeoInfo/Ceo'
 import StudentInfo from './components/StudentInfo/StudentInfo'
 import MainInfo from './components/MainInfo/MainInfo'
 import Footer from './components/footer/Footer'
+import Tarffis from './components/Tariffs/Tarffis'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Projectinfo />
       <Faq />
       <Ceo />
+      <Tarffis />
       <StudentInfo />
       <Footer/>
     </div>
