@@ -25,7 +25,6 @@
   width: 100%;
   position: relative;
   top: -40px;
-
   object-fit: cover;
   overflow: hidden;
 }
@@ -98,7 +97,7 @@
 
 
 
-@media (min-width: 386px) and (max-width: 926px) {
+@media (min-width: 306px) and (max-width: 926px) {
   .card {
     width: 100%;
     display: flex;
@@ -116,7 +115,7 @@
   .main .card .imgBx {
     width: 100%;  
     top: 0;
-    left: 60px;
+    left: 40px;
     object-fit: cover;
     overflow: hidden;
   }

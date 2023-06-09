@@ -59,7 +59,7 @@
 }
 
 
-@media (min-width:386px) and (max-width: 767px) {
+@media (min-width:306px) and (max-width: 767px) {
   .faq-container {
     width: 100%;
     padding: 8px;
